@@ -149,6 +149,10 @@ def daily_stats(time_series):
 
             j += 1
 
+    # Aggiungo l'ultima lista con i valori delle temperature dell'ultimo giorno
+
+    values.append(giorni)
+
     # Analizzo ogni linea di values , che contiene i valori delle temperature registrate giorno dopo giorno ,
     # e costruisco la tripletta temperatura minima , massima e media per ogni giorno.
 
@@ -158,5 +162,4 @@ def daily_stats(time_series):
     # Ritorno la lista con i risultati finali.
 
     return risultati
-
 
