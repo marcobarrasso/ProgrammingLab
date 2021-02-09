@@ -149,8 +149,8 @@ def daily_stats(time_series):
 
             j += 1
 
-            # Analizzo ogni linea di values , che contiene i valori delle temperature registrate giorno dopo giorno ,
-            # e costruisco la tripletta temperatura minima , massima e media per ogni giorno.
+    # Analizzo ogni linea di values , che contiene i valori delle temperature registrate giorno dopo giorno ,
+    # e costruisco la tripletta temperatura minima , massima e media per ogni giorno.
 
     for line in values:
         risultati.append([min(line), max(line), sum(line) / len(line)])
